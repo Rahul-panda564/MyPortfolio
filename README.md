@@ -26,9 +26,6 @@ This project is a modern, animated personal portfolio designed to showcase:
 Location: Berhampur, Odisha, India
 
 ## Visual Preview
-
-### Hero
-
 ### Featured Project Screens
 
 | FoodSave | NexusAI |
