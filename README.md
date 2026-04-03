@@ -29,8 +29,6 @@ Location: Berhampur, Odisha, India
 
 ### Hero
 
-![Portfolio Hero](./public/Profile.jpeg)
-
 ### Featured Project Screens
 
 | FoodSave | NexusAI |
