@@ -11,7 +11,7 @@ const projects = [
     name: 'FoodSave',
     description:
       'AI-enabled food redistribution platform connecting donors, NGOs, and volunteers to reduce food waste. Features role-based workflows for donation creation, pickup coordination, delivery tracking, and impact analytics.',
-    image: '/project-foodsave.jpg',
+    image: 'project-foodsave.jpg',
     tech: ['React', 'TypeScript', 'Django', 'DRF', 'SQLite'],
     liveUrl: 'https://rahul-panda564.github.io/FoodSave/',
     githubUrl: 'https://github.com/Rahul-panda564/FoodSave',
@@ -21,7 +21,7 @@ const projects = [
     name: 'VelvetRose',
     description:
       'High-end florist aesthetic website with premium e-commerce experience. Features botanical artistry showcase, product catalog, and romantic styling with smooth GSAP animations.',
-    image: '/project-velvetrose.jpg',
+    image: 'project-velvetrose.jpg',
     tech: ['React', 'Vite', 'GSAP', 'TypeScript'],
     liveUrl: 'https://rahul-panda564.github.io/VelvetRose',
     githubUrl: 'https://github.com/Rahul-panda564/VelvetRose',
@@ -31,7 +31,7 @@ const projects = [
     name: 'Trekify',
     description:
       'Premium camping and outdoor gear rental platform with destination-first planning. Features curated gear catalog, clean pricing cards, and modern UX for adventure enthusiasts.',
-    image: '/project-trekify.jpg',
+    image: 'project-trekify.jpg',
     tech: ['JavaScript', 'CSS', 'HTML'],
     liveUrl: 'https://rahul-panda564.github.io/Trekify',
     githubUrl: 'https://github.com/Rahul-panda564/Trekify',
@@ -41,7 +41,7 @@ const projects = [
     name: 'NexusAI',
     description:
       'AI SaaS chat interface with scroll-driven animations and simulated conversational flow. Features cinematic UI, GSAP ScrollTrigger effects, and production-style frontend architecture.',
-    image: '/project-nexusai.jpg',
+    image: 'project-nexusai.jpg',
     tech: ['React', 'TypeScript', 'GSAP', 'Framer Motion'],
     liveUrl: 'https://rahul-panda564.github.io/AI_SAAS_CHAT_INTERFACE/',
     githubUrl: 'https://github.com/Rahul-panda564/AI_SAAS_CHAT_INTERFACE',
@@ -49,6 +49,7 @@ const projects = [
 ];
 
 export default function Projects() {
+  const baseUrl = import.meta.env.BASE_URL;
   const sectionRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
@@ -128,7 +129,7 @@ export default function Projects() {
               {/* Image */}
               <div className="relative h-56 sm:h-64 overflow-hidden">
                 <img
-                  src={project.image}
+                  src={`${baseUrl}${project.image}`}
                   alt={project.name}
                   className="project-image w-full h-full object-cover transition-transform duration-700"
                 />

@@ -2,7 +2,9 @@
 
 Recruiter-friendly portfolio website highlighting my full-stack engineering work, problem-solving approach, and production-style frontend execution.
 
-![Rahul Panda](./public/Profile.jpeg)
+<p align="center">
+	<img src="./public/Profile.jpeg" alt="Rahul Panda" width="140" />
+</p>
 
 ## Live Website
 

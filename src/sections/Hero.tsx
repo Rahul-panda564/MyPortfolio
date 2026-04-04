@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { ArrowDown, Github, Instagram, Linkedin, Twitter } from 'lucide-react';
 
 export default function Hero() {
+  const profileImageSrc = `${import.meta.env.BASE_URL}Profile.jpeg`;
   const heroRef = useRef<HTMLDivElement>(null);
   const nameRef = useRef<HTMLHeadingElement>(null);
   const titleRef = useRef<HTMLSpanElement>(null);
@@ -222,7 +223,7 @@ export default function Hero() {
                 <div className="gradient-border w-full h-full rounded-full p-1">
                   <div className="w-full h-full rounded-full overflow-hidden bg-[#0f0f1a]">
                     <img
-                      src="/Profile.jpeg"
+                      src={profileImageSrc}
                       alt="Portrait of Rahul Kumar Panda"
                       loading="eager"
                       fetchPriority="high"
