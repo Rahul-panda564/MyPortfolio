@@ -1,29 +1,22 @@
-# Rahul Panda Portfolio
+# Rahul Kumar Panda - Developer Portfolio
 
-<p align="center">
-	<img src="./public/Profile.jpeg" alt="Rahul Panda" width="180" />
-</p>
+Recruiter-friendly portfolio website highlighting my full-stack engineering work, problem-solving approach, and production-style frontend execution.
 
-<p align="center">
-	Cinematic full-stack developer portfolio built with React, TypeScript, Vite, Tailwind CSS, and GSAP.
-</p>
+![Rahul Panda](./public/Profile.jpeg)
 
-<p align="center">
-	<a href="https://github.com/Rahul-panda564/MyPortfolio"><img src="https://img.shields.io/badge/Repository-MyPortfolio-111827?style=for-the-badge&logo=github" alt="Repository" /></a>
-	<a href="https://www.linkedin.com/in/rahul-kumar-panda-770118178"><img src="https://img.shields.io/badge/LinkedIn-Rahul%20Panda-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-	<a href="mailto:rahulpanda432@gmail.com"><img src="https://img.shields.io/badge/Email-rahulpanda432%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-</p>
+## Live Website
 
-## Overview
+- Portfolio: https://rahul-panda564.github.io/MyPortfolio/
+- GitHub Repository: https://github.com/Rahul-panda564/MyPortfolio
 
-This project is a modern, animated personal portfolio designed to showcase:
+## Why This Portfolio Stands Out
 
-- Professional profile and branding
-- Featured projects with live demos and repo links
-- Technical skills and stack coverage
-- Contact and social channels
+- Clear personal brand with strong visual identity and smooth interaction design.
+- Project-first storytelling with live demos, GitHub links, and concise impact-focused summaries.
+- Modern engineering stack with React, TypeScript, animation orchestration, and component-driven architecture.
+- Recruiter-ready contact surface with social links, availability signal, and direct email access.
 
-Location: Berhampur, Odisha, India
+## Highlights
 
 ## Visual Preview
 ### Featured Project Screens
@@ -51,75 +44,71 @@ Location: Berhampur, Odisha, India
 	- Live: https://rahul-panda564.github.io/Trekify
 	- GitHub: https://github.com/Rahul-panda564/Trekify
 
+- Cinematic hero section with typewriter title, staged animation timeline, and responsive CTA flow.
+- Scroll-triggered reveals across major sections using GSAP and ScrollTrigger.
+- Featured projects grid with tech tags, live previews, and source links.
+- Structured skills map across frontend, backend, database, and tooling.
+- Polished contact experience with animated UI states and confirmation feedback.
+
+## Featured Work
+
+| Project | Live | Source |
+| --- | --- | --- |
+| FoodSave | https://rahul-panda564.github.io/FoodSave/ | https://github.com/Rahul-panda564/FoodSave |
+| NexusAI | https://rahul-panda564.github.io/AI_SAAS_CHAT_INTERFACE/ | https://github.com/Rahul-panda564/AI_SAAS_CHAT_INTERFACE |
+| VelvetRose | https://rahul-panda564.github.io/VelvetRose | https://github.com/Rahul-panda564/VelvetRose |
+| Trekify | https://rahul-panda564.github.io/Trekify | https://github.com/Rahul-panda564/Trekify |
+
 ## Tech Stack
 
-- React 19
-- TypeScript
-- Vite
-- Tailwind CSS
-- GSAP + ScrollTrigger
-- Radix UI
-- Lucide React
+- Frontend: React 19, TypeScript, Vite, Tailwind CSS
+- Motion: GSAP, ScrollTrigger, SplitType
+- UI System: Radix UI primitives, reusable UI components
+- Tooling: ESLint, TypeScript project references, PostCSS
 
-## Key Sections
+## Portfolio Sections
 
-- Home/Hero with profile image, title animation, and CTA
-- Projects with live links and GitHub repo links
-- Skills with categorized proficiencies and animated UI
-- Contact with email, location, and social links
-- Footer with quick links and social handles
+- Home: Intro, value proposition, social entry points
+- Projects: Featured builds with demo and code links
+- Skills: Category-wise proficiency and tech orbit visualization
+- Contact: Email, location, social channels, message form UI
 
-## Project Structure
+## Local Setup
 
-```text
-app/
-	public/
-		Profile.jpeg
-		project-foodsave.jpg
-		project-nexusai.jpg
-		project-trekify.jpg
-		project-velvetrose.jpg
-	src/
-		sections/
-			Hero.tsx
-			Projects.tsx
-			Skills.tsx
-			Contact.tsx
-			Footer.tsx
-```
-
-## Local Development
+Run from the app directory:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Build and preview:
+Production build:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Personal Info Configured
+## Deploying To GitHub Pages
+
+This repository is configured to deploy from main using GitHub Actions.
+
+1. Push changes to main.
+2. In GitHub, open Settings -> Pages.
+3. Ensure Source is set to GitHub Actions.
+4. Wait for the workflow named Deploy Portfolio to GitHub Pages to complete.
+
+Your site will publish at:
+
+- https://rahul-panda564.github.io/MyPortfolio/
+
+## Contact
 
 - Email: rahulpanda432@gmail.com
 - LinkedIn: https://www.linkedin.com/in/rahul-kumar-panda-770118178
-- Instagram: https://www.instagram.com/_rahulpanda__?igsh=OWd1ZGF2MHhkdnJt
-- Twitter/X: https://x.com/Rahul_Panda_10
+- GitHub: https://github.com/Rahul-panda564
 - Location: Berhampur, Odisha, India
-
-## GitHub Push Commands
-
-Run from the project root folder that contains this README:
-
-```bash
-git remote add origin https://github.com/Rahul-panda564/MyPortfolio.git
-git branch -M main
-git push -u origin main
-```
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE).
+Licensed under MIT. See [LICENSE](LICENSE).
