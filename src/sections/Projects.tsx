@@ -8,6 +8,26 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
   {
     id: 1,
+    name: 'BharatVote',
+    description:
+      'AI-powered, gamified PWA simplifying the Indian electoral process. Features 7-stage interactive electoral modules, Gemini AI assistant, and a high-fidelity responsive design.',
+    image: 'project-bharatvote.png',
+    tech: ['Next.js', 'Tailwind CSS', 'Google Gemini API', 'Firebase', 'TypeScript'],
+    liveUrl: 'https://rahul-panda564.github.io/BharatVote/',
+    githubUrl: 'https://github.com/Rahul-panda564/BharatVote',
+  },
+  {
+    id: 2,
+    name: 'FlowState',
+    description:
+      'High-performance productivity platform with focused work environments. Features advanced security middleware, integrated Firebase analytics, and seamless AI-driven task management.',
+    image: 'project-flowstate.png',
+    tech: ['React', 'Node.js', 'Express', 'Firebase', 'Tailwind CSS'],
+    liveUrl: 'https://rahul-panda564.github.io/FlowState/',
+    githubUrl: 'https://github.com/Rahul-panda564/FlowState',
+  },
+  {
+    id: 3,
     name: 'FoodSave',
     description:
       'AI-enabled food redistribution platform connecting donors, NGOs, and volunteers to reduce food waste. Features role-based workflows for donation creation, pickup coordination, delivery tracking, and impact analytics.',
@@ -17,17 +37,7 @@ const projects = [
     githubUrl: 'https://github.com/Rahul-panda564/FoodSave',
   },
   {
-    id: 2,
-    name: 'VelvetRose',
-    description:
-      'High-end florist aesthetic website with premium e-commerce experience. Features botanical artistry showcase, product catalog, and romantic styling with smooth GSAP animations.',
-    image: 'project-velvetrose.jpg',
-    tech: ['React', 'Vite', 'GSAP', 'TypeScript'],
-    liveUrl: 'https://rahul-panda564.github.io/VelvetRose',
-    githubUrl: 'https://github.com/Rahul-panda564/VelvetRose',
-  },
-  {
-    id: 3,
+    id: 4,
     name: 'Trekify',
     description:
       'Premium camping and outdoor gear rental platform with destination-first planning. Features curated gear catalog, clean pricing cards, and modern UX for adventure enthusiasts.',
@@ -35,16 +45,6 @@ const projects = [
     tech: ['JavaScript', 'CSS', 'HTML'],
     liveUrl: 'https://rahul-panda564.github.io/Trekify',
     githubUrl: 'https://github.com/Rahul-panda564/Trekify',
-  },
-  {
-    id: 4,
-    name: 'NexusAI',
-    description:
-      'AI SaaS chat interface with scroll-driven animations and simulated conversational flow. Features cinematic UI, GSAP ScrollTrigger effects, and production-style frontend architecture.',
-    image: 'project-nexusai.jpg',
-    tech: ['React', 'TypeScript', 'GSAP', 'Framer Motion'],
-    liveUrl: 'https://rahul-panda564.github.io/AI_SAAS_CHAT_INTERFACE/',
-    githubUrl: 'https://github.com/Rahul-panda564/AI_SAAS_CHAT_INTERFACE',
   },
 ];
 
@@ -73,7 +73,7 @@ export default function Projects() {
       );
 
       // Cards stagger animation
-      cardsRef.current.forEach((card, index) => {
+      cardsRef.current.forEach((card: HTMLDivElement | null, index: number) => {
         if (card) {
           gsap.fromTo(
             card,
@@ -123,7 +123,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              ref={(el) => { cardsRef.current[index] = el; }}
+              ref={(el: HTMLDivElement | null) => { cardsRef.current[index] = el; }}
               className="project-card group relative glass rounded-2xl overflow-hidden"
             >
               {/* Image */}
