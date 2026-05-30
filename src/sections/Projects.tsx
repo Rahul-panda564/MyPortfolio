@@ -13,7 +13,7 @@ const projects = [
       'AI-powered, gamified PWA simplifying the Indian electoral process. Features 7-stage interactive electoral modules, Gemini AI assistant, and a high-fidelity responsive design.',
     image: 'project-bharatvote.png',
     tech: ['Next.js', 'Tailwind CSS', 'Google Gemini API', 'Firebase', 'TypeScript'],
-    liveUrl: 'https://rahul-panda564.github.io/BharatVote/',
+    liveUrl: 'https://bharat-vote-dun.vercel.app/',
     githubUrl: 'https://github.com/Rahul-panda564/BharatVote',
   },
   {
@@ -33,7 +33,7 @@ const projects = [
       'AI-enabled food redistribution platform connecting donors, NGOs, and volunteers to reduce food waste. Features role-based workflows for donation creation, pickup coordination, delivery tracking, and impact analytics.',
     image: 'project-foodsave.jpg',
     tech: ['React', 'TypeScript', 'Django', 'DRF', 'SQLite'],
-    liveUrl: 'https://rahul-panda564.github.io/FoodSave/',
+    liveUrl: 'https://food-save-eight.vercel.app/',
     githubUrl: 'https://github.com/Rahul-panda564/FoodSave',
   },
   {
